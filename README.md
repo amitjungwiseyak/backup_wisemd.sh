@@ -4,4 +4,6 @@
 3. scp into vm1 /tmp
 
 ## Prerequisits
-ssh login into the vm1 form the target vm where backup.sh
+1. ssh login into the vm1 form the target vm where backup.sh
+2. configuration into crontab -e 
+    0 0 * * * /home/ubuntu/backup.sh (to run every midnight)
