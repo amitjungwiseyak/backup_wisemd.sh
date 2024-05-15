@@ -5,5 +5,5 @@
 
 ## Prerequisits
 1. ssh login into the vm1 form the target vm where backup.sh
-2. configuration into crontab -e \n
+2. configuration into crontab <br>
     0 0 * * * /home/ubuntu/backup.sh (to run every midnight)
