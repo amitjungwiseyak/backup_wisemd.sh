@@ -9,7 +9,7 @@ POSTGRES_CONTAINER_ID=$(docker ps --filter "ancestor=postgres:16.1" --format {{.
 
  #pg_dump the sql file
 
- STORED_FILE=$(hostname)-$(date +"%m-%d_%H-%M").sql
+ STORED_FILE=$(date +"%m-%d_%H-%M")-$(hostname).sql
 
 echo "PGDUMP SQL file."
  docker exec -t $POSTGRES_CONTAINER_ID pg_dump -U keycloak -d wisemd > $STORED_FILE
